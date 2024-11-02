@@ -2,11 +2,14 @@ const myLibrary = [];
 const button = document.querySelector('.btn');
 const bookContainer = document.querySelector('.book-container');
 
-function Book(title, author, pages, read) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
+class Book {
+
+    constructor (title, author, pages, read) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
 }
 
 button.addEventListener('click', () => {
